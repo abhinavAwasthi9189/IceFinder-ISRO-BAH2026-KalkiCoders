@@ -37,4 +37,9 @@
  `lander.py`<br>
    this is the final file, it takes data from psr, illimation and uses it to find the best landing places near the location it got from lunar_psr_locations.bin and then create a path for the rover to go from lander to ice. it takes in consideration the elevation as well as sunlight[for the solar panels]. this is doen when it checks the coordinates sees if the path was already found and is placed in [mission_cache.bin], if not do what is written above and put in the data. then, if creates an interface where you can see the path being taken as well as where ice is via [lunar_ice_mask.py]. we can see any of them we want.<br>
 
-`why so many seprate file?` this is done because not all processes are needed at the dame time. DFSAR will be re run only if new files are added. PSR will be done if the resolution is changes[118m->20m]. specially the PSR-crater finder.py takes about 1 hour and 20 minutes to run. the cpp will be only run when the other two are changed. but the lander.py will be runned whenever we want to see the data. we can't wait 2hr everytime to see the change. this makes so that you can run the program even if you just have [lunar.py,lunar_ice_mask.bin,lunar_psr_location.bin]. 
+`why so many seprate file?` this is done because not all processes are needed at the dame time. DFSAR will be re run only if new files are added. PSR will be done if the resolution is changes[118m->20m]. specially the PSR-crater finder.py takes about 1 hour and 20 minutes to run. the cpp will be only run when the other two are changed. but the lander.py will be runned whenever we want to see the data. we can't wait 2hr everytime to see the change. this makes so that you can run the program even if you just have [lunar.py,lunar_ice_mask.bin,lunar_psr_location.bin]. <br>
+
+#some images from the final interface<br>
+<img width="1897" height="1136" alt="Screenshot 2026-06-26 234201" src="https://github.com/user-attachments/assets/c4e67a33-8194-49f6-b19c-fba82c018971" /><br>
+<img width="975" height="533" alt="Screenshot 2026-06-26 234248" src="https://github.com/user-attachments/assets/c16648a9-606c-4766-8510-3f33df542377" />
+
