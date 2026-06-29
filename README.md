@@ -1,7 +1,7 @@
 # IceFinder-ISRO-BAH2026-KalkiCoders
 
 # Introduction
- this is a set of code that works together to find ice on the south pole of the moon, find the best place near it to land the ship and pathfind for the rover to get to the ice.
+ These are a set of codes that work together to find ice on the south pole of the moon, find the best place near it to land the ship and pathfind for the rover to  get to the ice. While deciding optimum path for rover, we take place several constraints into account, like maximum battery life of rover, maximum presence of sunlight for rover, continuous communication between lander and rover, etc.
 
 # Languages and Imports
  it uses two languages python[ for easy of use] and C++[ for fater computation]
